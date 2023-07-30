@@ -1,2 +1,2 @@
-# clean-code-noes
-My Notes and highlights of clean code book
+# Clean Code Notes
+My notes and highlights of the Clean Code book.
