@@ -16,6 +16,7 @@
 > An ounce of prevention is worth a pound of cure.
 
 
- You should name a variable using the same care with which you name a first-born child.
+ You should name a variable using the same care with which you name a firstborn child.
 
  **Design as a process, not a static endpoint.**
+ Of course you have been impeded by bad code. So then why did you write it?
