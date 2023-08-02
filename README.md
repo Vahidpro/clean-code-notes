@@ -19,4 +19,6 @@
  You should name a variable using the same care with which you name a firstborn child.
 
  **Design as a process, not a static endpoint.**
+ 
  Of course you have been impeded by bad code. So then why did you write it?
+ We’ve all said we’d go back and clean it up later. Of course, in those days we didn’t know LeBlanc’s law: Later equals never.
