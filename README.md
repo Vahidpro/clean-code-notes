@@ -26,5 +26,6 @@
   We’ve all said we’d go back and clean it up later. Of course, in those days we didn’t know LeBlanc’s law: Later equals never.
 
   **No duplication, one thing, expressiveness, tiny abstractions. Everything is there.**
+  
   It is not the language that makes programs appear simple. It is the programmer
 that make the language appear simple!
