@@ -30,3 +30,5 @@
   It is not the language that makes programs appear simple. It is the programmer that make the language appear simple!
 
   We are authors. And one thing about authors is that they have readers. Indeed, authors are responsible for communicating well with their readers. The next time you write a line of code, remember you are an author writing for readers who will judge your effort.
+
+  **Leave the campground cleaner than you found it.**
