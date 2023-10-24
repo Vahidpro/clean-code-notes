@@ -38,3 +38,13 @@ The cleanup doesn’t have to be something big. Change one variable name for the
 ## Chatper 2: Meaningful Names
 
 Names are everywhere in software. We name our variables, our functions, our arguments, classes, and packages. We name our source files and the directories that contain them. We name our jar files and war files and ear files. We name and name and name. Because we do so much of it, we’d better do it well.
+
+**Choosing good names takes time but saves more than it takes. So take care with your names and change them when you find better ones.**
+
+The name of a variable, function, or class, should answer all the big questions. 
+It should tell you 
++ why it exists,
++ what it does,
++ and how it is used.
+
+If a name requires a comment, then the name does not reveal its intent.
