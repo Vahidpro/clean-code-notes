@@ -53,3 +53,9 @@ If a name requires a comment, then the name does not reveal its intent.
 ### Avoid Disinformation
 
 Noise words are another meaningless distinction. Imagine that you have a `Product` class. If you have another called `ProductInfo` or `ProductData`, you have made the names different without making them mean anything different. Info and Data are indistinct noise words like `a`, `an`, and `the`.
+
+### Use Pronounceable Names
+### Use Searchable Name
+My personal preference is that single-letter names can ONLY be used as local variables inside short methods. _The length of a name should correspond to the size of its scope_
+
+
