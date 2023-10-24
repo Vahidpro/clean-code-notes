@@ -39,6 +39,7 @@ The cleanup doesn’t have to be something big. Change one variable name for the
 
 Names are everywhere in software. We name our variables, our functions, our arguments, classes, and packages. We name our source files and the directories that contain them. We name our jar files and war files and ear files. We name and name and name. Because we do so much of it, we’d better do it well.
 
+### Use Intention-Revealing Names
 **Choosing good names takes time but saves more than it takes. So take care with your names and change them when you find better ones.**
 
 The name of a variable, function, or class, should answer all the big questions. 
@@ -48,3 +49,7 @@ It should tell you
 + and how it is used.
 
 If a name requires a comment, then the name does not reveal its intent.
+
+### Avoid Disinformation
+
+Noise words are another meaningless distinction. Imagine that you have a `Product` class. If you have another called `ProductInfo` or `ProductData`, you have made the names different without making them mean anything different. Info and Data are indistinct noise words like `a`, `an`, and `the`.
