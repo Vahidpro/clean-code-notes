@@ -58,4 +58,5 @@ Noise words are another meaningless distinction. Imagine that you have a `Produc
 ### Use Searchable Name
 My personal preference is that single-letter names can ONLY be used as local variables inside short methods. _The length of a name should correspond to the size of its scope_
 
-
+### Class Names
+Classes and objects should have noun or noun phrase names like `Customer`, `WikiPage`, `Account`, and `AddressParser`. Avoid words like `Manager`, `Processor`, `Data`, or Info in the name of a class. A class name should not be a verb.
