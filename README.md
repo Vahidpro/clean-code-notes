@@ -60,3 +60,12 @@ My personal preference is that single-letter names can ONLY be used as local var
 
 ### Class Names
 Classes and objects should have noun or noun phrase names like `Customer`, `WikiPage`, `Account`, and `AddressParser`. Avoid words like `Manager`, `Processor`, `Data`, or Info in the name of a class. A class name should not be a verb.
+
+**Say what you mean. Mean what you say.**
+The function names have to stand alone, and they have to be consistent in order for you to pick the correct method without any additional exploration. Likewise, it’s confusing to have a `controller` and a `manager` and a `driver` in the same code base.
+
+## Don't Pun
+Avoid using the same word for two purposes. Using the same term for two different ideas is essentially a pun.
+
+## Add Meaningful Context
+Imagine that you have variables named `firstName`, `lastName`, `street`, `houseNumber`, `city`, `state`, and `zipcode`. Taken together it’s pretty clear that they form an address. But what if you just saw the `state` variable being used alone in a method? Would you automatically infer that it was part of an address? You can add context by using prefixes: `addrFirstName`, `addrLastName`, `addrState`, and so on. At least readers will understand that these variables are part of a larger structure.
