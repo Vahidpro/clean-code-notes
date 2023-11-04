@@ -80,3 +80,16 @@ Functions should not be 100 lines long.Functions should hardly ever be 20 lines 
 This implies that the blocks within `if` statements, `else` statements, `while` statements, and so on should be one line long. Probably that line should be a function call. Not only does this keep the enclosing function small, but it also adds documentary value because the function called within the block can have a nicely descriptive name.
 
 This also implies that functions should not be large enough to hold nested structures. Therefore, the indent level of a function should not be greater than one or two. This, of course, makes the functions easier to read and understand.
+
+## Do One Thing
+
+**FUNCTIONS SHOULD DO ONE THING. THEY SHOULD DO IT WELL. THEY SHOULD DO IT ONLY.**
+The problem with this statement is that it is hard to know what “**one thing**” is.
+
+another way to know that a function is doing more than “one thing” is if you can extract another function from it with a name that is not merely a restatement of its implementation.
+
+## One Level of Abstraction per Function
+In order to make sure our functions are doing “one thing,” we need to make sure that the statements within our function are all at the same level of abstraction.
+
+## Reading Code from Top to Bottom: _The Stepdown Rule_
+We want the code to read like a top-down narrative.5 We want every function to be followed by those at the next level of abstraction so that we can read the program, descending one level of abstraction at a time as we read down the list of functions.
