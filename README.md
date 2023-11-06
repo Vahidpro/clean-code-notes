@@ -95,4 +95,4 @@ In order to make sure our functions are doing “one thing,” we need to make s
 We want the code to read like a top-down narrative.5 We want every function to be followed by those at the next level of abstraction so that we can read the program, descending one level of abstraction at a time as we read down the list of functions.
 
 ## Use Descriptive Names
-
+> “You know you are working on clean code when each routine turns out to be pretty much what you expected.”
