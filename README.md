@@ -96,3 +96,28 @@ We want the code to read like a top-down narrative.5 We want every function to b
 
 ## Use Descriptive Names
 > “You know you are working on clean code when each routine turns out to be pretty much what you expected.”
+
+The smaller and more focused a function is, the easier it is to choose a descriptive name
+Don’t be afraid to make a name long. A long descriptive name is better than a short enigmatic name. A long descriptive name is better than a long descriptive comment.
+
+## Function Arguments
+The ideal number of arguments for a function is zero (niladic). Next comes one (monadic), followed closely by two (dyadic). Three arguments (triadic) should be avoided where possible. More than three (polyadic) requires very special justification—and then shouldn’t be used anyway.
+
+## Flag Arguments
+Flag arguments are ugly. Passing a boolean into a function is a truly terrible practice. It immediately complicates the signature of the method, loudly proclaiming that this function does more than one thing. It does one thing if the flag is true and another if the flag is false!
+
+## Dyadic Function
+**The parts we ignore are where the bugs will hide.**
+
+There are times, of course, where two arguments are appropriate. For example,
+`Point p = new Point(0,0);` is perfectly reasonable. Cartesian points naturally take two arguments. Indeed, we’d be very surprised to see `new Point(0)`. However, the two arguments in this case are ordered components of a single value! Whereas `output-Stream` and `name` have neither a natural cohesion, nor a natural ordering.
+
+Dyads aren’t evil, and you will certainly have to write them. However, you should be aware that they come at a cost and should take advantage of what mechanims may be available to you to convert them into monads.
+
+## Argument Objects
+When a function seems to need more than two or three arguments, it is likely that some of those arguments ought to be wrapped into a class of their own. Consider, for example, the
+difference between the two following declarations:
+`Circle makeCircle(double x, double y, double radius);`
+`Circle makeCircle(Point center, double radius);`
+Reducing the number of arguments by creating objects out of them may seem like cheating, but it’s not. When groups of variables are passed together, the way `x` and `y` are in the example above, they are likely part of a concept that deserves a name of its own.
+
