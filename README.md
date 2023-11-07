@@ -154,7 +154,7 @@ Imagine this from the point of view of the reader. What does it mean? Is it aski
 
 could try to resolve this by renaming the set function to `setAndCheckIfExists`, but that doesn’t much help the readability of the if statement. The real solution is to separate the
 command from the query so that the ambiguity cannot occur.
-`if (attributeExists("username")) { <br>
-setAttribute("username", "unclebob");
-...
+`if (attributeExists("username")) {   
+setAttribute("username", "unclebob");  
+...  
 `
