@@ -123,3 +123,13 @@ difference between the two following declarations:
 
 Reducing the number of arguments by creating objects out of them may seem like cheating, but it’s not. When groups of variables are passed together, the way `x` and `y` are in the example above, they are likely part of a concept that deserves a name of its own.
 
+## Argument Lists
+Functions that take variable arguments can be monads, dyads, or even triads. But it would be a mistake to give them more arguments than that.
+
+`void monad(Integer... args);`
+
+`void dyad(String name, Integer... args);`
+
+`void triad(String name, int count, Integer... args);`
+
+
