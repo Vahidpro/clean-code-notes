@@ -132,4 +132,29 @@ Functions that take variable arguments can be monads, dyads, or even triads. But
 
 `void triad(String name, int count, Integer... args);`
 
+### Have No Side Effects
+Side effects are lies. Your function promises to do one thing, but it also does other hidden things. Sometimes it will make unexpected changes to the variables of its own class. Sometimes it will make them to the parameters passed into the function or to system globals. In either case they are devious and damaging mistruths that often result in strange temporal couplings and order dependencies.
 
+## Output Arguments
+Arguments are most naturally interpreted as inputs to a function. If you have been programming for more than a few years, I’m sure you’ve done a double-take on an argument
+that was actually an output rather than an input. For example: `appendFooter(s);`
+
+Does this function append `s` as the footer to something? Or does it append some footer to `s`? Is `s` an input or an output?
+
+## Command Query Separation
+Functions should either do something or answer something, but not both.
+Either your
+function should change the state of an object, or it should return some information about that object. Doing both often leads to confusion.
+This leads to odd statements like this:
+
+`if (set("username", "unclebob"))...`
+
+Imagine this from the point of view of the reader. What does it mean? Is it asking whether the `“username”` attribute was previously set to `“unclebob”?` Or is it asking whether the
+`“username”` attribute was successfully set to `“unclebob”`? It’s hard to infer the meaning from the call because it’s not clear whether the word `“set”` is a verb or an adjective.
+
+could try to resolve this by renaming the set function to `setAndCheckIfExists`, but that doesn’t much help the readability of the if statement. The real solution is to separate the
+command from the query so that the ambiguity cannot occur.
+`if (attributeExists("username")) {
+setAttribute("username", "unclebob");
+...
+`
