@@ -153,8 +153,15 @@ Imagine this from the point of view of the reader. What does it mean? Is it aski
 `“username”` attribute was successfully set to `“unclebob”`? It’s hard to infer the meaning from the call because it’s not clear whether the word `“set”` is a verb or an adjective.
 
 could try to resolve this by renaming the set function to `setAndCheckIfExists`, but that doesn’t much help the readability of the if statement. The real solution is to separate the
-command from the query so that the ambiguity cannot occur.
+command from the query so that the ambiguity cannot occur.  
 `if (attributeExists("username")) {`   
 `setAttribute("username", "unclebob"); `  
 `...  `  
 `}`  
+
+## Prefer Exceptions to Returning Error Codes
+
+## Error Handling Is One Thing
+
+Functions should do one thing. Error handing is one thing. Thus, a function that handles errors should do nothing else. This implies that if the keyword try exists in a function, it should be the very first word in the function and that there should be nothing after the catch/finally blocks.
+
