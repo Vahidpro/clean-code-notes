@@ -175,6 +175,6 @@ Master programmers think of systems as stories to be told rather than programs t
 Never forget that your real goal is to tell the story of the system, and that the functions you write need to fit cleanly together into a clear and precise language to help you with
 that telling.
 
-### Chapter 4: Comments
+# Chapter 4: Comments
 > _“Don’t comment bad code—rewrite it.”_  
 > —Brian W. Kernighan and P. J. Plaugher1
