@@ -163,11 +163,18 @@ command from the query so that the ambiguity cannot occur.
 
 ## Error Handling Is One Thing
 
-Functions should do one thing. Error handing is one thing. Thus, a function that handles errors should do nothing else. This implies that if the keyword try exists in a function, it should be the very first word in the function and that there should be nothing after the catch/finally blocks.
+Functions should do one thing. Error handing is one thing. Thus, a function that handles errors should do nothing else. This implies that if the keyword try exists in a function, it should be the very first word in the function and that there should be nothing after the catch/finally blocks.  
 
 ## Don't Repeat Yourself
 **Duplication may be the root of all evil in software.**
 
 ## Conclusion
 Every system is built from a domain-specific language designed by the programmers to describe that system.  
-Functions are the verbs of that language, and classes are the nouns.
+Functions are the verbs of that language, and classes are the nouns.  
+Master programmers think of systems as stories to be told rather than programs to be written. They use the facilities of their chosen programming language to construct a much richer and more expressive language that can be used to tell that story.  
+Never forget that your real goal is to tell the story of the system, and that the functions you write need to fit cleanly together into a clear and precise language to help you with
+that telling.
+
+### Chapter 4: Comments
+> _“Don’t comment bad code—rewrite it.”_  
+> —Brian W. Kernighan and P. J. Plaugher1
