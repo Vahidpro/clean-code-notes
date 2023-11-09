@@ -190,9 +190,9 @@ Rather than spend your time writing the comments that explain the mess you’ve 
 ## Explain Yourself in Code
 Which would you rather see? This:  
 
-`// Check to see if the employee is eligible for full benefits  
-if ((employee.flags & HOURLY_FLAG) &&  
-(employee.age > 65))`  
+```// Check to see if the employee is eligible for full benefits  
+```if ((employee.flags & HOURLY_FLAG) &&  
+```(employee.age > 65))
 
 Or this?  
 
