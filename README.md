@@ -199,7 +199,71 @@ if ((employee.flags & HOURLY_FLAG) &&
 Or this?  
 
 ```Java
-if (employee.isEligibleForFullBenefits())```  
+if (employee.isEligibleForFullBenefits())
+```  
 
 It takes only a few seconds of thought to explain most of your intent in code. In many cases it’s simply a matter of creating a function that says the same thing as the comment
 you want to write.
+
+## Good Comments
+### Legal Comments
+Sometimes our corporate coding standards force us to write certain comments for legal reasons. For example, copyright and authorship statements are necessary and reasonable things to put into a comment at the start of each source file.
+```js
+// Copyright (C) 2003,2004,2005 by Object Mentor, Inc. All rights reserved.
+// Released under the terms of the GNU General Public License version 2 or later.
+```
+
+### Informative Comments
+It is sometimes useful to provide basic information with a comment. For example, consider this comment that explains the return value of an abstract method:  
+```java
+// Returns an instance of the Responder being tested.
+protected abstract Responder responderInstance();
+```
+
+### Explanation of Intent
+Sometimes a comment goes beyond just useful information about the implementation and provides the intent behind a decision.  
+
+## Clarification  
+Sometimes it is just helpful to translate the meaning of some obscure argument or return value into something that’s readable.
+```java
+assertTrue(a.compareTo(a) == 0); // a == a
+assertTrue(a.compareTo(b) != 0); // a != b
+assertTrue(ab.compareTo(ab) == 0); // ab == ab
+```
+
+## TODO Comments
+
+It is sometimes reasonable to leave “To do” notes in the form of comments. In the //TODO following case, the `TODO` comment explains why the function has a degenerate implementation
+and what that function’s future should be.
+```java
+**//TODO-MdM these are not needed
+// We expect this to go away when we do the checkout model**
+protected VersionInfo makeVersion() throws Exception
+{
+return null;
+}
+```
+
+## Amplification
+
+A comment may be used to amplify the importance of something that may otherwise seem inconsequential.
+
+```javascript
+String listItemContent = match.group(3).trim();
+// the trim is real important.
+It removes the starting
+// spaces that could cause the item to be recognized
+// as another list.
+new ListItemWidget(this, listItemContent, this.level + 1);
+return buildList(text.substring(match.end()));
+```
+
+## Bad Comments
+
+### Mumbling
+
+Plopping in a comment just because you feel you should or because the process requires it, is a hack. If you decide to write a comment, then spend the time necessary to make sure it is the best comment you can write.  
+Any comment that forces you to look in another module for the meaning of that comment has failed to communicate to you and is not worth the bits it consumes.
+
+### Redundant Comments
+The comment probably takes longer to read than the code itself.
