@@ -178,3 +178,12 @@ that telling.
 # Chapter 4: Comments
 > _“Don’t comment bad code—rewrite it.”_  
 > —Brian W. Kernighan and P. J. Plaugher1
+
+Comments are not like Schindler’s List. They are not “pure good.” Indeed, comments are, at best, a necessary evil.  
+The proper use of comments is to compensate for our failure to express ourself in code. Note that I used the word failure. I meant it. Comments are always failures.  
+Every time you write a comment, you should grimace and feel the failure of your ability of expression.  
+Truth can only be found in one place: the code. Only the code can truly tell you what it does. It is the only source of truly accurate information. Therefore, though comments are sometimes necessary, we will expend significant energy to minimize them.  
+
+## Comments Do Not Make Up for Bad Code
+Rather than spend your time writing the comments that explain the mess you’ve made, spend it cleaning that mess.
+
