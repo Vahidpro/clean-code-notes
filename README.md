@@ -1,5 +1,8 @@
 # Clean Code Notes
-### My notes and highlights of the Clean Code book.
+## My Clean Code Notes and Highlights
+### Introduction
+
+This repository contains my personal notes and key takeaways from Robert C. Martin's book Clean Code. It's a collection of insights and best practices to help me write clean, maintainable, and readable code.
 
 # Foreword
 
